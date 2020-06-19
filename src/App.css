@@ -1,0 +1,442 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+.normal {
+  background: #c2c2a1;
+}
+
+.normal-dark {
+  background: #999964;
+}
+
+.fighting {
+  background: #c03028;
+}
+
+.fighting-dark {
+  background: #6c1b16;
+}
+
+.flying {
+  background: skyblue;
+}
+
+.flying-dark {
+  background: #30aadc;
+}
+
+.poison {
+  background: #a040a0;
+}
+
+.poison-dark {
+  background: #572357;
+}
+
+.ground {
+  background: #e0c068;
+}
+
+.ground-dark {
+  background: #bc9426;
+}
+
+.rock {
+  background: #b8a038;
+}
+
+.rock-dark {
+  background: #6a5c20;
+}
+
+.bug {
+  background: #a8b820;
+}
+
+.bug-dark {
+  background: #596111;
+}
+
+.ghost {
+  background: #705898;
+}
+
+.ghost-dark {
+  background: #403357;
+}
+
+.steel {
+  background: #b8b8d0;
+}
+
+.steel-dark {
+  background: #7b7ba7;
+}
+
+.fire {
+  background: #ea1409;
+}
+
+.fire-dark {
+  background: #880c05;
+}
+
+.water {
+  background: #6890f0;
+}
+
+.water-dark {
+  background: #1650dc;
+}
+
+.grass {
+  background: #78c850;
+}
+
+.grass-dark {
+  background: #4a872b;
+}
+
+.electric {
+  background: #f8d030;
+}
+
+.electric-dark {
+  background: #bc9706;
+}
+
+.psychic {
+  background: #f85888;
+}
+
+.psychic-dark {
+  background: #e1094a;
+}
+
+.ice {
+  background: #98d8d8;
+}
+
+.ice-dark {
+  background: #4ebcbc;
+}
+
+.dragon {
+  background: #7038f8;
+}
+
+.dragon-dark {
+  background: #3e07c3;
+}
+
+.dark {
+  background: #705848;
+}
+
+.dark-dark {
+  background: #322720;
+}
+
+.fairy {
+  background: #ee99ac;
+}
+
+.fairy-dark {
+  background: #df4265;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Pokemon";
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ef5350;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.navbar-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.navbar-logo-img {
+  width: 100%;
+}
+
+.navbar-box {
+  -webkit-box-flex: 2.6;
+      -ms-flex: 2.6;
+          flex: 2.6;
+}
+
+.navbar-box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.navbar-box-list-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.navbar-box-list-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.spinner {
+  width: 200px;
+  margin: 50px auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner-image {
+  -webkit-animation: rotate 3s ease-in-out infinite;
+          animation: rotate 3s ease-in-out infinite;
+  width: 50%;
+  z-index: 0;
+}
+
+.spinner-content {
+  z-index: 2;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.container-list-box {
+  border: 2px solid #000;
+}
+
+.container-list-box a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container-list-box-picture {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-list-box-picture-image {
+  width: 100%;
+}
+
+.container .filter {
+  width: 80%;
+}
+
+.container .filter-input {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid black;
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container .video {
+  margin: 2rem auto;
+}
+
+.container .spinner {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box-pokemon-headingbox {
+  text-align: center;
+}
+
+.box-pokemon-slider-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-pokemon-slider-slide-image {
+  width: 300px;
+}
+
+.box-pokemon-abilities {
+  text-align: center;
+}
+
+.box-pokemon-info-stats {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.box-pokemon-info-stats-statsName-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.box-pokemon-info-stats-statsName-list-statname {
+  text-align: center;
+  list-style: none;
+  padding: 0.5rem;
+  height: 46px;
+}
+
+.box-pokemon-info-stats-statsValue-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.box-pokemon-info-stats-statsValue-list-statvalue {
+  text-align: center;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.box-pokemon-info-stats .bar {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background: #e1dfdf;
+}
+
+.box-pokemon-info-stats .bar-color {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.box-pokemon-description {
+  padding: 2rem;
+  text-align: center;
+}
+
+.box-pokemon-error {
+  text-align: center;
+}
+
+.box-pokemon-error a {
+  font-size: 1.5rem;
+  color: #ef5350;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-box-list-item {
+    font-size: 2rem;
+  }
+  .container-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-logo-img {
+    width: 200px;
+  }
+  .container {
+    max-width: 1100px;
+  }
+  .container-list {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=App.css.map */
