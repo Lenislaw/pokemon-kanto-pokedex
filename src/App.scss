@@ -1,0 +1,234 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@import "_types.scss";
+
+$link-color: #000;
+$border-color: #000;
+$font-color: #000;
+$navbar-color: #ef5350;
+$primary-color: #ef5350;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pokemon";
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: $navbar-color;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  &-logo {
+    flex: 1;
+    &-img {
+      width: 100%;
+    }
+  }
+  &-box {
+    flex: 2.6;
+
+    &-list {
+      display: flex;
+      padding: 0.5rem;
+      &-item {
+        flex: 1;
+        text-align: center;
+        list-style: none;
+        font-size: 1rem;
+
+        a {
+          text-decoration: none;
+          color: $link-color;
+        }
+      }
+    }
+  }
+}
+.spinner {
+  width: 200px;
+  margin: 50px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &-image {
+    animation: rotate 3s ease-in-out infinite;
+    width: 50%;
+    z-index: 0;
+  }
+  &-content {
+    z-index: 2;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+
+  &-list {
+    display: grid;
+    grid-gap: 5px;
+    &-box {
+      border: 2px solid $border-color;
+
+      a {
+        text-decoration: none;
+        color: $font-color;
+      }
+
+      &-picture {
+        width: 50%;
+        margin: 0 auto;
+        &-image {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .filter {
+    width: 80%;
+
+    &-input {
+      width: 100%;
+      padding: 0.5rem;
+      outline: none;
+      border: 1px solid black;
+      font-family: FontAwesome;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+  .video {
+    margin: 2rem auto;
+  }
+  .spinner {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.box {
+  &-pokemon {
+    &-headingbox {
+      text-align: center;
+    }
+    &-slider {
+      &-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-image {
+          width: 300px;
+        }
+      }
+    }
+    &-abilities {
+      text-align: center;
+    }
+    &-info-stats {
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 1.5rem;
+      &-statsName-list {
+        flex: 1;
+        &-statname {
+          text-align: center;
+          list-style: none;
+          padding: 0.5rem;
+          height: 46px;
+        }
+      }
+      &-statsValue-list {
+        flex: 1;
+        &-statvalue {
+          text-align: center;
+          list-style: none;
+          padding: 0.5rem;
+        }
+      }
+      .bar {
+        background-color: white;
+        width: 100%;
+        height: 30px;
+
+        position: relative;
+        background: #e1dfdf;
+        &-color {
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    &-description {
+      padding: 2rem;
+      text-align: center;
+    }
+    &-error {
+      text-align: center;
+      a {
+        font-size: 1.5rem;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    &-box {
+      &-list {
+        &-item {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .container {
+    &-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    &-list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+@media only screen and(min-width:1200px) {
+  .navbar {
+    &-logo {
+      &-img {
+        width: 200px;
+      }
+    }
+  }
+  .container {
+    max-width: 1100px;
+    &-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
