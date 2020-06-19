@@ -31,7 +31,7 @@ Run app in development mode (start JSON Server and app development view)
 http://localhost:3000/ - app development view
 http://localhost:5000/ - JSON Server
 
-example. http://localhost:5000/pokemons - display pokemons array in db.json file
+example. http://localhost:5000/pokemons - display pokemons object array from db.json file
 
 ### Project status
 
