@@ -10,6 +10,7 @@
     "json-server": "^0.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-favicon": "0.0.18",
     "react-id-swiper": "^3.0.0",
     "react-player": "^2.3.1",
     "react-router-dom": "^5.2.0",
