@@ -1,0 +1,6 @@
+export const GET_POKEMONS = "GET_POKEMONS";
+export const GET_POKEMON = "GET_POKEMON";
+export const RESET_POKEMON = "RESET_POKEMON";
+export const POKEMONS_ERROR = "POKEMONS_ERROR";
+export const FILTER_POKEMONS = "FILTER_POKEMONS";
+export const FILTER_CLEAR = "FILTER_CLEAR";
